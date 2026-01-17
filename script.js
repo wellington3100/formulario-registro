@@ -1,18 +1,13 @@
 (function () {
-  emailjs.init("PUBLIC_KEY_AQUI");
+  emailjs.init("template_ithweea");
 })();
 
-const form = document.getElementById("registroForm");
-const mensaje = document.getElementById("mensaje");
-
-form.addEventListener("submit", function (e) {
-  e.preventDefault();
-
-  emailjs.sendForm(
-    "SERVICE_ID_AQUI",
-    "TEMPLATE_ID_AQUI",
-    this
-  ).then(() => {
+emailjs.sendForm(
+  "service_h8dqwck",
+  "TU_TEMPLATE_ID",
+  this
+)
+.then(() => {
     mensaje.classList.remove("oculto");
     form.reset();
   }).catch(() => {
