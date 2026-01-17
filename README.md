@@ -1,13 +1,13 @@
-#Formulario de Registro Web
+# Formulario de Registro Web
 
-##Descripción
+## Descripción
 Formulario web desarrollado con HTML, CSS y JavaScript, que permite capturar datos de usuarios como nombre, correo electrónico, WhatsApp y local/sucursal.
 La información ingresada es enviada automáticamente al correo configurado mediante un servicio externo, sin necesidad de un backend propio.
 El formulario muestra un mensaje de “Registro exitoso” al completar el envío, brindando una experiencia clara y directa al usuario.
 Está diseñado con enfoque mobile-first, ideal para su uso en celulares.
 
 
-Este proyecto demuestra habilidades en:
+## Este proyecto demuestra habilidades en:
 Desarrollo Front-End
 Captura y validación de datos
 Integración de servicios externos para envío de correos
@@ -16,7 +16,7 @@ Despliegue de proyectos en GitHub Pages
 
 ---
 
-##Tecnologías utilizadas
+## Tecnologías utilizadas
 HTML5
 CSS3
 JavaScript
