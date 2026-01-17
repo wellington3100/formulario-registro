@@ -1,37 +1,43 @@
-Formulario web responsive desarrollado con HTML, CSS y JavaScript, diseñado para capturar datos de usuarios desde dispositivos móviles y escritorio.
-El sistema permite registrar nombre, correo electrónico, WhatsApp y local/sucursal, enviando automáticamente la información al correo configurado mediante un servicio externo de formularios.
+#Formulario de Registro Web
+##Descripción
 
-Al completar el formulario, el usuario recibe una confirmación visual de “Registro exitoso”, mejorando la experiencia de uso.
+Formulario web desarrollado con HTML, CSS y JavaScript, que permite capturar datos de usuarios como nombre, correo electrónico, WhatsApp y local/sucursal.
+La información ingresada es enviada automáticamente al correo configurado mediante un servicio externo, sin necesidad de un backend propio.
+
+El formulario muestra un mensaje de “Registro exitoso” al completar el envío, brindando una experiencia clara y directa al usuario.
+Está diseñado con enfoque mobile-first, ideal para su uso en celulares.
 
 Este proyecto demuestra habilidades en:
 
-Desarrollo Front-End orientado a dispositivos móviles (mobile-first)
+Desarrollo Front-End
 
-Captura y validación de datos de usuario
+Captura y validación de datos
 
-Integración de servicios externos sin backend propio
+Integración de servicios externos para envío de correos
 
-Despliegue de proyectos en producción usando GitHub Pages
+Diseño responsive orientado a dispositivos móviles
 
-Organización de código y buenas prácticas en proyectos web
+Despliegue de proyectos en GitHub Pages
 
 Tecnologías utilizadas
 
 HTML5
 
-CSS3 (Diseño responsive)
+CSS3
 
-JavaScript (DOM y eventos)
+JavaScript
 
 Formspree (envío de formularios por correo)
 
-GitHub Pages (hosting)
+GitHub Pages
 
-Git (control de versiones)
+Git
 
 Funcionalidades
 
-Formulario de registro con campos obligatorios:
+Captura de datos mediante formulario web
+
+Campos obligatorios:
 
 Nombre
 
@@ -41,12 +47,10 @@ WhatsApp
 
 Local / Sucursal
 
-Validación básica de datos en el navegador
-
 Envío automático de la información al correo configurado
 
-Mensaje visual de confirmación de registro exitoso
+Mensaje de confirmación “Registro exitoso”
 
 Diseño responsive optimizado para celulares
 
-Proyecto accesible mediante enlace público
+Acceso al proyecto mediante enlace público
