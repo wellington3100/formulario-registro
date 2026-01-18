@@ -1,5 +1,5 @@
 (function () {
-    emailjs.init("czDWUqMBEYh48EVMO"); // ← tu public key
+    emailjs.init("czDWUqMBEYh48EVMO"); // PUBLIC KEY
 })();
 
 const form = document.getElementById("form");
@@ -8,16 +8,18 @@ const success = document.getElementById("success");
 form.addEventListener("submit", function (e) {
     e.preventDefault();
 
-       "service_h8dqwck",
-    "template_ithweea",
-    this
-).then(
-    function (response) {
-        console.log("SUCCESS", response);
-    },
-    function (error) {
-        console.log("ERROR", error);
-    }
-);
-
+    emailjs.sendForm(
+        "service_h8dqwck",   // SERVICE ID
+        "template_ithweea",  // TEMPLATE ID
+        this
+    ).then(
+        function () {
+            success.style.display = "block";
+            form.reset();
+        },
+        function (error) {
+            console.error("EmailJS Error:", error);
+            alert("Error al enviar. Revisá la consola.");
+        }
+    );
 });
