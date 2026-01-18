@@ -2,15 +2,21 @@
   emailjs.init("template_ithweea");
 })();
 
-emailjs.sendForm(
-  "service_h8dqwck",
-  "TU_TEMPLATE_ID",
-  this
-)
-.then(() => {
-    mensaje.classList.remove("oculto");
+const form = document.getElementById("registroForm");
+const mensaje = document.getElementById("mensaje");
+
+form.addEventListener("submit", function (e) {
+  e.preventDefault();
+
+  emailjs.sendForm(
+    "service_h8dqwck",
+    "template_ithweea",
+    this
+  ).then(() => {
+    mensaje.style.display = "block";
     form.reset();
-  }).catch(() => {
-    alert("Error al enviar");
+  }).catch((error) => {
+    console.error("ERROR:", error);
+    alert("Error al enviar el registro");
   });
 });
