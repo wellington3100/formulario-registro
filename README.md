@@ -88,4 +88,4 @@ cd formulario-emailjs
 
 ## Autor
 
-**Wellington Álvarez**
+**Wéllington Álvarez**
