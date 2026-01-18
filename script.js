@@ -1,22 +1,25 @@
 (function () {
-  emailjs.init("template_ithweea");
+    emailjs.init("czDWUqMBEYh48EVMO"); // ← tu public key
 })();
 
-const form = document.getElementById("registroForm");
-const mensaje = document.getElementById("mensaje");
+const form = document.getElementById("form");
+const success = document.getElementById("success");
 
 form.addEventListener("submit", function (e) {
-  e.preventDefault();
+    e.preventDefault();
 
-  emailjs.sendForm(
-    "service_h8dqwck",
-    "template_ithweea",
-    this
-  ).then(() => {
-    mensaje.style.display = "block";
-    form.reset();
-  }).catch((error) => {
-    console.error("ERROR:", error);
-    alert("Error al enviar el registro");
-  });
+    emailjs.sendForm(
+        "service_h8dqwck",   // tu SERVICE ID
+        "template_ithweea",  // tu TEMPLATE ID
+        this
+    ).then(
+        function () {
+            success.style.display = "block";
+            form.reset();
+        },
+        function (error) {
+            alert("Error al enviar el formulario");
+            console.error(error);
+        }
+    );
 });
