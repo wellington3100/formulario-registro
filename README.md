@@ -1,72 +1,91 @@
-# Formulario de Registro Web
+# Formulario de Registro con EmailJS
 
 ## Descripción
-Formulario web desarrollado con HTML, CSS y JavaScript, que permite capturar datos de usuarios como nombre, correo electrónico, WhatsApp y local/sucursal.
-La información ingresada es enviada automáticamente al correo configurado mediante un servicio externo, sin necesidad de un backend propio.
-El formulario muestra un mensaje de “Registro exitoso” al completar el envío, brindando una experiencia clara y directa al usuario.
-Está diseñado con enfoque mobile-first, ideal para su uso en celulares.
 
+Formulario web responsive desarrollado en **HTML, CSS y JavaScript** que permite capturar datos de usuarios (nombre, correo, WhatsApp y local) y enviar automáticamente la información por correo electrónico utilizando **EmailJS**, sin necesidad de backend.
 
-## Este proyecto demuestra habilidades en:
-Desarrollo Front-End
-Captura y validación de datos
-Integración de servicios externos para envío de correos
-Diseño responsive orientado a dispositivos móviles
-Despliegue de proyectos en GitHub Pages
+El sistema está pensado para uso en dispositivos móviles y desktop, y es ideal para páginas de registro, landing pages o formularios de contacto.
+El correo se envía directamente al email ingresado por el usuario, mostrando un mensaje de **registro exitoso** al completar el envío.
+
+Este proyecto demuestra habilidades en:
+
+* Desarrollo Front-End puro (HTML, CSS, JavaScript)
+* Integración de servicios externos (EmailJS)
+* Manejo de formularios y eventos
+* Validación básica de datos
+* Diseño responsive orientado a portfolio
+* Uso de servicios sin backend
 
 ---
 
 ## Tecnologías utilizadas
-HTML5
-CSS3
-JavaScript
-Formspree (envío de formularios por correo)
-GitHub Pages
-Git
+
+* HTML5
+* CSS3 (diseño dark mode, mobile-first)
+* JavaScript Vanilla
+* EmailJS (envío de correos sin backend)
+* GitHub Pages (para despliegue)
 
 ---
 
 ## Funcionalidades
-Captura de datos mediante formulario web
 
-##Campos obligatorios:
-Nombre
-Correo electrónico
-WhatsApp
-Local / Sucursal
-Envío automático de la información al correo configurado
-Mensaje de confirmación “Registro exitoso”
-Diseño responsive optimizado para celulares
-Acceso al proyecto mediante enlace público
+* Formulario de registro con los campos:
 
-##Pasos para clonar
-Abrir la terminal o CMD.
-Ir a la carpeta donde quieras guardar el proyecto, por ejemplo:
-```bash
-cd C:\Users\Usuario\Proyectos
-```
-Clonar el repositorio con este comando:
-```bash
-git clone https://github.com/wellington3100/formulario-registro.git
-```
-Entrar a la carpeta del proyecto:
-```bash
-cd formulario-registro
-```
-Abrir los archivos en un editor de código o ejecutar index.html en el navegador.
+  * Nombre
+  * Correo electrónico
+  * WhatsApp
+  * Local
+* Envío automático de los datos por correo electrónico
+* El correo se envía al email ingresado por el usuario
+* Mensaje visual de **registro exitoso** al completar el envío
+* Diseño responsive adaptable a celular y desktop
+* Integración completa sin necesidad de servidor
 
 ---
 
-Autor:
-Wellington Álvarez
+## Pasos para clonar
 
+* Abrir la terminal o CMD
+* Ir a la carpeta donde quieras guardar el proyecto, por ejemplo:
 
+```bash
+cd C:\Users\Usuario\Proyectos
+```
 
+* Clonar el repositorio:
 
+```bash
+git clone https://github.com/wellington3100/formulario-emailjs.git
+```
 
+* Entrar a la carpeta del proyecto:
 
+```bash
+cd formulario-emailjs
+```
 
+* Abrir el archivo `index.html` en el navegador o desplegarlo en GitHub Pages
 
+---
 
+## Configuración de EmailJS
 
+1. Crear una cuenta en [https://www.emailjs.com](https://www.emailjs.com)
+2. Conectar un servicio de correo (Gmail, Outlook, etc.)
+3. Crear un template con las variables:
 
+   * `{{nombre}}`
+   * `{{correo}}`
+   * `{{whatsapp}}`
+   * `{{local}}`
+4. Configurar el destinatario del correo como:
+
+   * **To email:** `{{correo}}`
+5. Colocar el **Public Key**, **Service ID** y **Template ID** en el archivo `script.js`
+
+---
+
+## Autor
+
+**Wellington Álvarez**
