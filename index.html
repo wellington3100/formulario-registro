@@ -1,12 +1,71 @@
-<form id="registroForm">
-  <input type="text" name="nombre" placeholder="Nombre" required>
-  <input type="email" name="email" placeholder="Correo" required>
-  <input type="tel" name="whatsapp" placeholder="WhatsApp" required>
-  <input type="text" name="local" placeholder="Local" required>
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Formulario de Registro</title>
 
-  <button type="submit">Enviar</button>
-  <p id="mensaje" class="oculto">Registro exitoso ✅</p>
-</form>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background: #f2f2f2;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+    }
 
-<script src="https://cdn.jsdelivr.net/npm/emailjs-com@3/dist/email.min.js"></script>
-<script src="script.js"></script>
+    form {
+      background: #fff;
+      padding: 20px;
+      width: 100%;
+      max-width: 400px;
+      border-radius: 8px;
+    }
+
+    h2 {
+      text-align: center;
+    }
+
+    input, button {
+      width: 100%;
+      padding: 10px;
+      margin: 8px 0;
+    }
+
+    button {
+      background: black;
+      color: white;
+      border: none;
+      cursor: pointer;
+    }
+
+    #mensaje {
+      margin-top: 10px;
+      color: green;
+      text-align: center;
+      display: none;
+    }
+  </style>
+</head>
+<body>
+
+  <form id="registroForm">
+    <h2>Registro</h2>
+
+    <input type="text" name="nombre" placeholder="Nombre" required />
+    <input type="email" name="email" placeholder="Correo" required />
+    <input type="tel" name="whatsapp" placeholder="WhatsApp" required />
+    <input type="text" name="local" placeholder="Local / Sucursal" required />
+
+    <button type="submit">Enviar</button>
+
+    <p id="mensaje">Registro exitoso ✅</p>
+  </form>
+
+  <!-- EmailJS -->
+  <script src="https://cdn.jsdelivr.net/npm/emailjs-com@3/dist/email.min.js"></script>
+  <script src="script.js"></script>
+
+</body>
+</html>
