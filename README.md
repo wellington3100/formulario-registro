@@ -86,19 +86,6 @@ cd formulario-emailjs
 
 ---
 
-## Diseño y Paleta Visual
-
-El proyecto utiliza una **paleta terracotta / naranja** alineada al CV y la identidad visual del portafolio.
-
-* Fondo oscuro cálido
-* Acentos en naranja terracotta para foco visual y acciones
-* Tipografía limpia y legible
-* Enfoque minimalista y profesional
-
-La hoja de estilos se encuentra en `style.css`, facilitando mantenimiento y reutilización del diseño en otros proyectos del portafolio.
-
----
-
 ## Autor
 
 **Wéllington Álvarez**
